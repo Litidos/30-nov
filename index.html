@@ -10,8 +10,8 @@
 				opacity: 100;
 			}
 			.carousel-item {
-				-webkit-transition: opacity 0.6s ease-out;
-				transition: opacity 0.6s ease-out;
+				-webkit-transition: opacity 0.3s ease-out;
+				transition: opacity 0.3s ease-out;
 			}
 			#carousel-1:checked ~ .control-1,
 			#carousel-2:checked ~ .control-2,
@@ -66,7 +66,8 @@
     </div>
     <!-- Como se extrae -->
     <p class="font-semibold mx-auto mt-10 text-lg">¿Cómo es el proceso de extracción?</p>
-    <div class="mx-auto mt-10  grid grid-cols-3 gap-6">
+    <!-- Tarjetas -->
+    <div class="hidden lg:grid grid-cols-3 gap-6 mx-auto mt-10 ">
         <div class="bg-white rounded-lg p-11 shadow-sm bg-opacity-50">
             <h1 class="text-center font-bold text-7xl mb-10 mt-3 ">1</h1>
             <img class="mb-10" src="imgs/extraccion.gif" alt="">
@@ -91,14 +92,9 @@
             </p>
         </div>
     </div>
-    <!-- Representación salar -->
-    <div class="mx-auto">
-        <img src="imgs/salarAtacama.png" alt="Salar atacama" class="mx-auto mt-12">
-    </div>
-
 
     <!-- Carrusel -->
-    <div class="carousel relative bg-yellow-100 m-24">
+    <div class="carousel relative bg-yellow-100 m-24 lg:hidden ">
         <div class="carousel-inner relative w-full">
           <!--Extraccion-->
             <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
@@ -139,6 +135,11 @@
             <label for="carousel-1" class="next control-3 w-10 h-10 -mr-20 md:-mr-20 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-yellow-200 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
             
         </div>
+    </div>
+
+    <!-- Representación salar -->
+    <div class="mx-auto my-10">
+        <img src="imgs/salarAtacama.png" alt="Salar atacama" class="mx-auto mt-12">
     </div>
     
 </div>  
